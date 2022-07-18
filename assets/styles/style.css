@@ -5,6 +5,7 @@
     2. General
     3. Navigation
         3.1 Mobile
+        3.2 Desktop
  */
 
 /*
@@ -79,4 +80,46 @@ html * {
     background-color: var(--black);
     border-radius: 10px;
     margin: 5px 0;
+}
+
+/*
+    Navigation Desktop
+ */
+
+@media screen and (min-width: 768px) {
+
+    .menu__bar {
+        display: flex;
+        position: initial;
+        background-color: initial;
+        width: initial;
+        height: initial;
+    }
+
+    .menu__link:hover {
+        color: var(--blue-ligth);
+        transition: color 0.5s;
+    }
+
+    .menu__contact {
+        border: 1px solid var(--blue);
+        background-color: var(--blue-ligth);
+        border-radius: 8px;
+    }
+
+    .menu__contact .menu__link {
+        padding: 13px;
+        color: white;
+    }
+
+    .menu__contact .menu__link:hover {
+        color: var(--black);
+        border-color: var(--blue-ligth);
+        background-color: var(--blue);
+    }
+
+    .menu__mobile {
+        display: none;
+    }
+
 }

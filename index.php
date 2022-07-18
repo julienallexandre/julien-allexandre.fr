@@ -23,7 +23,7 @@
             <li class="menu__item">
                 <a href="" class="menu__link">Réalisations</a>
             </li>
-            <li class="menu__item">
+            <li class="menu__item menu__contact">
                 <a href="" class="menu__link">Me contacter</a>
             </li>
         </ul>
