@@ -52,36 +52,44 @@
     </div>
 </section>
 <section class="competences" id="competences">
-    <h2 class="competences__title">Mes compétences</h2>
-    <div class="competence">
-        <h4 class="competence__title">Front-End</h4>
-        <div class="competence__bloc">
-            <p class="competence__description">Pour rendre votre application réactive et dynamique j'utilise principalement VueJS</p>
-            <ul class="competence__list">
-                <li class="competence__list-item">VueJS</li>
-                <li class="competence__list-item">TailwindCSS</li>
-                <li class="competence__list-item">HTML</li>
-                <li class="competence__list-item">CSS</li>
-                <li class="competence__list-item">JS</li>
-            </ul>
-        </div>
+    <div class="competences__title">
+        <h2 class="competences__title-item">Mes compétences</h2>
+        <span class="competences__title-space"></span>
     </div>
-    <div class="competence">
-        <h4 class="competence__title">Back-End</h4>
-        <div class="competence__bloc">
-            <p class="competence__description">Pour développer votre application web j'utilise principalement le framework Symfony</p>
-            <ul class="competence__list">
-                <li class="competence__list-item">Symfony</li>
-                <li class="competence__list-item">PHP</li>
-                <li class="competence__list-item">MySQL</li>
-            </ul>
-        </div>
+    <div class="competences_infos">
+        <p>Je continue sans cesse de me tenir à jour sur les nouveautés et j'essaye de toucher un peu à d'autres langages.</p>
     </div>
-    <div class="competence">
-        <h4 class="competence__title">Intégration</h4>
-        <div class="competence__bloc">
-            <p class="competence__description">Vous avez une maquette à intégrer ?</p>
-            <p class="competence__description">Je suis capable de concevoir le site lié à celle-ci en respectant les normes du web et le responsive.</p>
+    <div class="competences__bloc">
+        <div class="competence">
+            <h4 class="competence__title">Front-End</h4>
+            <div class="competence__bloc">
+                <p class="competence__description">Pour rendre votre application réactive et dynamique j'utilise principalement VueJS</p>
+                <ul class="competence__list">
+                    <li class="competence__list-item">VueJS</li>
+                    <li class="competence__list-item">TailwindCSS</li>
+                    <li class="competence__list-item">HTML</li>
+                    <li class="competence__list-item">CSS</li>
+                    <li class="competence__list-item">JS</li>
+                </ul>
+            </div>
+        </div>
+        <div class="competence">
+            <h4 class="competence__title">Back-End</h4>
+            <div class="competence__bloc">
+                <p class="competence__description">Pour développer votre application web j'utilise principalement le framework Symfony</p>
+                <ul class="competence__list">
+                    <li class="competence__list-item">Symfony</li>
+                    <li class="competence__list-item">PHP</li>
+                    <li class="competence__list-item">MySQL</li>
+                </ul>
+            </div>
+        </div>
+        <div class="competence">
+            <h4 class="competence__title">Intégration</h4>
+            <div class="competence__bloc">
+                <p class="competence__description">Vous avez une maquette à intégrer ?</p>
+                <p class="competence__description">Je suis capable de concevoir le site lié à celle-ci en respectant les normes du web et le responsive.</p>
+            </div>
         </div>
     </div>
 </section>
