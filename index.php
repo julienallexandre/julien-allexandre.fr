@@ -24,7 +24,7 @@
                 <a href="#realisations" class="menu__link">Réalisations</a>
             </li>
             <li class="menu__item menu__contact">
-                <a href="" class="menu__link">Me contacter</a>
+                <a href="#contact" class="menu__link">Me contacter</a>
             </li>
         </ul>
         <div class="menu__mobile" id="menu_mobile">
@@ -47,7 +47,7 @@
         </div>
         <div class="presentation__btn">
             <a href="#realisations" class="presentation__btn-link">Mes réalisations</a>
-            <a href="" class="presentation__btn-link">Me contacter</a>
+            <a href="#contact" class="presentation__btn-link">Me contacter</a>
         </div>
     </div>
 </section>
@@ -131,6 +131,27 @@
         </div>
     </div>
 </section>
+<footer class="footer" id="contact">
+    <h2 class="footer__title">Retrouvez-moi</h2>
+    <div class="footer__bloc">
+        <div class="footer__socials">
+            <h4 class="footer__socials-title">Mes réseaux</h4>
+            <ul class="footer__socials-items">
+                <li class="footer__social-item">
+                    <a href="https://github.com/julienallexandre" class="footer__social-link" target="_blank">GitHub</a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="https://www.linkedin.com/in/julienallexandre/" class="footer__social-link" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__email">
+            <h4 class="footer__email-title">Mon email</h4>
+            <a href="mailto:contact@julien-allexandre.fr" class="footer__email-link" target="_blank">contact@julien-allexandre.fr</a>
+        </div>
+    </div>
+    <p class="footer__rights">Copyright &copy; 2022 <a href="https://julien-allexandre.fr">Julien ALLEXANDRE</a></p>
+</footer>
 
 <script src="assets/js/index.js"></script>
 </body>
