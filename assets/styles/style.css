@@ -6,6 +6,8 @@
     3. Navigation
         3.1 Mobile
         3.2 Desktop
+    4. Presentation
+        4.1 Mobile
  */
 
 /*
@@ -122,4 +124,61 @@ html * {
         display: none;
     }
 
+}
+
+/*
+    Presentation Mobile
+ */
+
+.presentation {
+    height: calc(50vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 50px;
+}
+
+.presentation__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation__text-title {
+    color: var(--blue-ligth);
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.presentation__text-name {
+    font-weight: 700;
+    margin: 8px 0;
+    font-size: 2rem;
+}
+
+.presentation__text-job {
+    font-size: 1.5rem;
+}
+
+.presentation__text-info {
+    font-weight: 300;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.presentation__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.presentation__btn-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 12px;
+    background: var(--blue-ligth);
+    border-radius: 8px;
+    margin: 20px;
 }
