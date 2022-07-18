@@ -1,0 +1,258 @@
+/*
+    *** SUMMARY ***
+
+    1. Variables
+    2. General
+    3. Navigation
+        3.1 Mobile
+        3.2 Desktop
+    4. Presentation
+        4.1 Mobile
+        4.2 Desktop
+ */
+
+/*
+    Variables
+ */
+
+:root {
+    --black: #222f3e;
+    --gray: #8395a7;
+    --gray-ligth: #c8d6e5;
+    --green: #10ac84;
+    --green-ligth: #1dd1a1;
+    --blue: #2e86de;
+    --blue-ligth: #54a0ff;
+    --red: #ee5253;
+    --red-ligth: #ff6b6b;
+}
+
+/*
+    General
+ */
+
+html * {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
+/*
+    Navigation Mobile
+ */
+
+.menu {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 0 32px;
+    box-shadow: 0 1px 4px black;
+}
+
+.menu__bar {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: var(--gray-ligth);
+    width: 100%;
+    height: calc(100vh - 60px);
+}
+
+.menu__item {
+    border-radius: 6px;
+    margin: 15px;
+    background-color: white;
+}
+
+.menu__link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--black);
+    font-weight: 700;
+    display: block;
+    padding: 15px;
+}
+
+.menu__mobile span {
+    display: block;
+    height: 4px;
+    width: 25px;
+    background-color: var(--black);
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+/*
+    Navigation Desktop
+ */
+
+@media screen and (min-width: 768px) {
+
+    .menu__bar {
+        display: flex;
+        position: initial;
+        background-color: initial;
+        width: initial;
+        height: initial;
+    }
+
+    .menu__link:hover {
+        color: var(--blue-ligth);
+        transition: color 0.5s;
+    }
+
+    .menu__contact {
+        border: 1px solid var(--blue);
+        background-color: var(--blue-ligth);
+        border-radius: 8px;
+    }
+
+    .menu__contact .menu__link {
+        padding: 13px;
+        color: white;
+    }
+
+    .menu__contact .menu__link:hover {
+        color: var(--black);
+        border-color: var(--blue-ligth);
+        background-color: var(--blue);
+    }
+
+    .menu__mobile {
+        display: none;
+    }
+
+}
+
+/*
+    Presentation Mobile
+ */
+
+.presentation {
+    height: calc(50vh - 60px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+}
+
+.presentation__img {
+    display: none;
+}
+
+.presentation__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.presentation__text-title {
+    color: var(--blue-ligth);
+    font-weight: 300;
+    font-size: 1.4rem;
+}
+
+.presentation__text-name {
+    font-weight: 700;
+    margin: 8px 0;
+    font-size: 2rem;
+}
+
+.presentation__text-job {
+    font-size: 1.5rem;
+}
+
+.presentation__text-info {
+    font-weight: 300;
+    text-align: center;
+    margin-top: 12px;
+}
+
+.presentation__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.presentation__btn-link {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 12px;
+    background: var(--blue-ligth);
+    border-radius: 8px;
+    margin: 20px;
+}
+
+/*
+    Presentation Desktop
+ */
+
+@media screen and (min-width: 768px) {
+
+    @keyframes rotate_scale {
+
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(180deg);
+        }
+    }
+
+    .presentation {
+        height: calc(100vh - 60px);
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .presentation__img {
+        display: block;
+    }
+
+    .presentation__img img {
+        height: 500px;
+    }
+
+    .presentation__img img:hover {
+        animation-name: rotate_scale;
+        animation-duration: 2s;
+    }
+
+    .presentation__text-title {
+        font-size: 1.6rem;
+    }
+
+    .presentation__text-name {
+        margin: 16px 0;
+        font-size: 2.2rem;
+    }
+
+    .presentation__text-job {
+        font-size: 1.7rem;
+    }
+
+    .presentation__text-info {
+        font-weight: 300;
+        margin-top: 24px;
+        font-size: 1.2rem;
+    }
+
+    .presentation__btn-link {
+        color: var(--blue);
+        background: initial;
+        font-size: 1.2rem;
+        border: 2px solid var(--blue);
+    }
+
+    .presentation__btn-link:hover {
+        color: white;
+        background: var(--blue-ligth);
+        transition: color 0.5s;
+    }
+
+}
