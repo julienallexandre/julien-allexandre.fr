@@ -9,6 +9,8 @@
     4. Presentation
         4.1 Mobile
         4.2 Desktop
+    5. Skills
+        5.1 Mobile
  */
 
 /*
@@ -255,4 +257,57 @@ html * {
         transition: color 0.5s;
     }
 
+}
+
+/*
+    Skills Mobile
+ */
+
+.competences {
+    height: calc(100vh - 60px);
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.competences__title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--blue-ligth);
+    text-align: center;
+}
+
+.competence {
+    padding: 5px;
+    border-radius: 0 8px 8px 8px;
+    box-shadow: 10px 10px 10px var(--blue-ligth);
+}
+
+.competence__title {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.competence__description {
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+
+.competence__bloc {
+    margin: 20px 0;
+}
+
+.competence__list {
+    display: flex;
+    justify-content: center;
+}
+
+.competence__list-item {
+    margin: 0 8px;
+    padding: 4px 8px;
+    color: white;
+    font-weight: 300;
+    background: var(--blue-ligth);
+    border-radius: 10px;
 }
