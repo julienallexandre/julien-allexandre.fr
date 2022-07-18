@@ -1,0 +1,33 @@
+/*
+    *** SUMMARY ***
+
+    1. Variables
+    2. General
+ */
+
+/*
+    Variables
+ */
+
+:root {
+    --black: #222f3e;
+    --gray: #8395a7;
+    --gray-ligth: #c8d6e5;
+    --green: #10ac84;
+    --green-ligth: #1dd1a1;
+    --blue: #2e86de;
+    --blue-ligth: #54a0ff;
+    --red: #ee5253;
+    --red-ligth: #ff6b6b;
+}
+
+/*
+    General
+ */
+
+html * {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+
