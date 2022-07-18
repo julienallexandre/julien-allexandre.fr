@@ -13,6 +13,28 @@
     <link rel="stylesheet" href="assets/styles/style.css">
 </head>
 <body>
+<header>
+    <nav class="menu">
+        <h4 class="menu__logo">JA</h4>
+        <ul class="menu__bar" id="menu_bar">
+            <li class="menu__item">
+                <a href="" class="menu__link">Compétences</a>
+            </li>
+            <li class="menu__item">
+                <a href="" class="menu__link">Réalisations</a>
+            </li>
+            <li class="menu__item">
+                <a href="" class="menu__link">Me contacter</a>
+            </li>
+        </ul>
+        <div class="menu__mobile" id="menu_mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+</header>
 
+<script src="assets/js/index.js"></script>
 </body>
 </html>
