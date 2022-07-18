@@ -14,6 +14,10 @@
         5.2 Desktop
     6. Projects
         6.1 Mobile
+        6.2 Desktop
+    7. Footer
+        7.1 Mobile
+        7.2 Desktop
  */
 
 /*
@@ -493,6 +497,80 @@ html * {
         border-radius: 8px;
         box-shadow: 2px 2px 10px var(--blue-ligth);
         width: 35%;
+    }
+
+}
+
+/*
+    Footer Mobile
+ */
+
+.footer {
+    margin: 50px 50px;
+}
+
+.footer__title {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--blue-ligth);
+}
+
+.footer__bloc {
+    margin: 50px 0;
+}
+
+.footer__socials {
+    margin-bottom: 25px;
+}
+
+.footer__socials-title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.footer__social-item {
+    margin: 15px 0;
+}
+
+.footer__social-link {
+    text-decoration: none;
+    color: var(--blue-ligth);
+}
+
+.footer__email-title {
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.footer__email-link {
+    text-decoration: none;
+    color: var(--blue-ligth);
+}
+
+.footer__rights {
+    text-align: center;
+}
+
+.footer__rights a {
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--blue-ligth);
+}
+
+/*
+    Footer Desktop
+ */
+
+@media screen and (min-width: 768px) {
+
+    .footer__bloc {
+        display: flex;
+    }
+
+    .footer__socials {
+        margin: 0 250px 0 0;
     }
 
 }
