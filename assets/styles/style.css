@@ -8,6 +8,7 @@
         3.2 Desktop
     4. Presentation
         4.1 Mobile
+        4.2 Desktop
  */
 
 /*
@@ -136,7 +137,11 @@ html * {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 50px;
+    margin: 0 50px;
+}
+
+.presentation__img {
+    display: none;
 }
 
 .presentation__text {
@@ -181,4 +186,73 @@ html * {
     background: var(--blue-ligth);
     border-radius: 8px;
     margin: 20px;
+}
+
+/*
+    Presentation Desktop
+ */
+
+@media screen and (min-width: 768px) {
+
+    @keyframes rotate_scale {
+
+        from {
+            transform: rotate(0deg);
+        }
+        to {
+            transform: rotate(180deg);
+        }
+    }
+
+    .presentation {
+        height: calc(100vh - 60px);
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .presentation__img {
+        display: block;
+    }
+
+    .presentation__img img {
+        height: 500px;
+    }
+
+    .presentation__img img:hover {
+        animation-name: rotate_scale;
+        animation-duration: 2s;
+    }
+
+    .presentation__text-title {
+        font-size: 1.6rem;
+    }
+
+    .presentation__text-name {
+        margin: 16px 0;
+        font-size: 2.2rem;
+    }
+
+    .presentation__text-job {
+        font-size: 1.7rem;
+    }
+
+    .presentation__text-info {
+        font-weight: 300;
+        margin-top: 24px;
+        font-size: 1.2rem;
+    }
+
+    .presentation__btn-link {
+        color: var(--blue);
+        background: initial;
+        font-size: 1.2rem;
+        border: 2px solid var(--blue);
+    }
+
+    .presentation__btn-link:hover {
+        color: white;
+        background: var(--blue-ligth);
+        transition: color 0.5s;
+    }
+
 }

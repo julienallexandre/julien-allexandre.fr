@@ -35,15 +35,20 @@
     </nav>
 </header>
 <section class="presentation">
-    <div class="presentation__text">
-        <p class="presentation__text-title">Bonjour, je suis</p>
-        <h1 class="presentation__text-name">Julien Allexandre</h1>
-        <p class="presentation__text-job">Développeur Web PHP</p>
-        <p class="presentation__text-info">Je suis à l'écoute de toutes opportunités dans le développement web.</p>
+    <div class="presentation__img">
+        <img src="assets/images/singe.png" alt="Image d'un singe">
     </div>
-    <div class="presentation__btn">
-        <a href="" class="presentation__btn-link">Mes réalisations</a>
-        <a href="" class="presentation__btn-link">Me contacter</a>
+    <div class="presentation__bloc">
+        <div class="presentation__text">
+            <p class="presentation__text-title">Bonjour, je suis</p>
+            <h1 class="presentation__text-name">Julien Allexandre</h1>
+            <p class="presentation__text-job">Développeur Web PHP</p>
+            <p class="presentation__text-info">Je suis à l'écoute de toutes opportunités dans le développement web.</p>
+        </div>
+        <div class="presentation__btn">
+            <a href="" class="presentation__btn-link">Mes réalisations</a>
+            <a href="" class="presentation__btn-link">Me contacter</a>
+        </div>
     </div>
 </section>
 
