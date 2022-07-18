@@ -9,6 +9,9 @@
     4. Presentation
         4.1 Mobile
         4.2 Desktop
+    5. Skills
+        5.1 Mobile
+        5.2 Desktop
  */
 
 /*
@@ -253,6 +256,119 @@ html * {
         color: white;
         background: var(--blue-ligth);
         transition: color 0.5s;
+    }
+
+}
+
+/*
+    Skills Mobile
+ */
+
+.competences {
+    height: calc(100vh - 60px);
+    margin: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.competences__title {
+    display: flex;
+    justify-content: center;
+}
+
+.competences__title-item {
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--blue-ligth);
+}
+
+.competences__title-space {
+    display: none;
+}
+
+.competences_infos {
+    margin: 30px 0 15px 0;
+    text-align: center;
+}
+
+.competences__bloc {
+    display: flex;
+    flex-direction: column;
+}
+
+.competence {
+    margin: 25px 0;
+    padding: 5px;
+    border-radius: 0 8px 8px 8px;
+    box-shadow: 10px 10px 10px var(--blue-ligth);
+}
+
+.competence__title {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.competence__description {
+    margin-left: 8px;
+    margin-bottom: 20px;
+}
+
+.competence__bloc {
+    margin: 20px 0;
+}
+
+.competence__list {
+    display: flex;
+    justify-content: center;
+}
+
+.competence__list-item {
+    margin: 0 8px;
+    padding: 4px 8px;
+    color: white;
+    font-weight: 300;
+    background: var(--blue-ligth);
+    border-radius: 10px;
+}
+
+/*
+    Skills Desktop
+ */
+
+@media screen and (min-width: 768px) {
+
+    .competences {
+        justify-content: center;
+    }
+
+    .competences__title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .competences__title-space {
+        display: block;
+        height: 2px;
+        width: 240px;
+        background-color: var(--blue-ligth);
+        border-radius: 10px;
+    }
+
+    .competences_infos {
+        margin: 50px 0;
+    }
+
+    .competences__bloc {
+        flex-direction: row;
+    }
+
+    .competence {
+        margin: 0 25px;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px var(--blue-ligth);
     }
 
 }
