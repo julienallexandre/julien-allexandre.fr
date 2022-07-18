@@ -17,6 +17,7 @@
         6.2 Desktop
     7. Footer
         7.1 Mobile
+        7.2 Desktop
  */
 
 /*
@@ -501,7 +502,7 @@ html * {
 }
 
 /*
-    Footer
+    Footer Mobile
  */
 
 .footer {
@@ -556,4 +557,20 @@ html * {
     text-decoration: none;
     font-weight: 700;
     color: var(--blue-ligth);
+}
+
+/*
+    Footer Desktop
+ */
+
+@media screen and (min-width: 768px) {
+
+    .footer__bloc {
+        display: flex;
+    }
+
+    .footer__socials {
+        margin: 0 250px 0 0;
+    }
+
 }
