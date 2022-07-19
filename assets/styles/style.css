@@ -60,6 +60,11 @@ html * {
     box-shadow: 0 1px 4px black;
 }
 
+.menu__logo {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2rem;
+}
+
 .menu__bar {
     display: none;
     position: absolute;
